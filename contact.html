@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact-form.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="navigation">
+      <h1 class="header-text" id="logo-text">Peter Franklin</h1>
+      <nav class="navigation-container">
+        <ul class="navlist">
+          <a href="index.html">
+            <li class="navlist-item">About</li>
+          </a>
+          <a href="projects.html">
+            <li class="navlist-item">Projects</li>
+          </a>
+          <a href="#">
+            <li class="navlist-item">Contact</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+    <div class="fcf-body">
+
+      <div id="fcf-form">
+        <h3 class="fcf-h3">Contact me!</h3>
+
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+          <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+          </div>
+
+          <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+          </div>
+
+          <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                required></textarea>
+            </div>
+          </div>
+
+          <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send
+              Message</button>
+          </div>
+
+          <div class="fcf-credit" id="fcf-credit">
+            Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <section class="social">
+      <div class="social-container">
+        <i class="social-icon">
+          <img src="/media/square-twitter.svg" alt="">
+        </i>
+        <i class="social-icon">
+          <img src="/media/github.svg" alt="">
+        </i>
+        <i class="social-icon">
+          <img src="/media/square-instagram.svg" alt="">
+        </i>
+      </div>
+    </section>
+    <div class="footer">
+      <footer>
+        <h3 class="footer-text">
+          Made with &#x1F920; in Texas
+        </h3>
+      </footer>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
