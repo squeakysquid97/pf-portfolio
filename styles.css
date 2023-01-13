@@ -63,7 +63,10 @@ section {
 .social-icon {
   width: 50px;
 }
-
+.skillDark {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
 .projects-iframe {
   padding: 1.8rem;
   margin: 0.5rem;
