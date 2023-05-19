@@ -1,5 +1,5 @@
 .main {
-  margin: 1.6rem 5rem;
+  /* margin: 1.6rem 5rem; */
   padding: 0.5rem 0.5rem;
   font-family: "Lato", sans-serif;
 }
@@ -154,6 +154,15 @@ footer {
   .social-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .fcf-body {
+    max-width: 100% !important;
+    margin-top: 2rem !important;
+  }
+
+  .fcf-button {
+    width: 1rem !important;
   }
 
   .footer-text {
