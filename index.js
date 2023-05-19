@@ -17,14 +17,14 @@ function setDarkMode() {
   documentText.style.color = "white";
   localStorage.setItem("darkMode", "true");
   skillIcon.classList.add("skillDark");
-  lightModeButton.innerHTML = "LightMode";
+  lightModeButton.innerHTML = "&#9788;";
 }
 
 function setLightMode() {
   mainDocument.style.backgroundColor = "white";
   documentText.style.color = "black";
   localStorage.setItem("darkMode", "false");
-  lightModeButton.innerHTML = "DarkMode";
+  lightModeButton.innerHTML = "&#9790;";
   skillIcon.classList.remove("skillDark");
 }
 

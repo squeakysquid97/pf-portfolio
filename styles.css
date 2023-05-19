@@ -123,3 +123,40 @@ footer {
   cursor: pointer;
   outline: none;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin: 1.6rem 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero {
+    width: 50%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-iframe {
+    width: 100%;
+  }
+
+  .social-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}
