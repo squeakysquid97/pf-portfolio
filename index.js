@@ -1,12 +1,6 @@
 window.onload = function () {
   if (localStorage.darkMode === "true") {
-    darkBySystem();
-  }
-
-  if (localStorage.darkMode === "true") {
-    console.log(localStorage.darkMode);
-  } else {
-    console.log(localStorage.darkMode, "darkBySystem has not run");
+    setDarkMode();
   }
 };
 
@@ -18,17 +12,12 @@ let darkMode = localStorage.getItem("darkMode");
 
 document.querySelector("body > div > section.skills");
 
-function darkBySystem() {
-  console.log(darkMode);
-  if (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  ) {
-    mainDocument.style.backgroundColor = "black";
-    documentText.style.color = "white";
-    localStorage.setItem("darkMode", "true");
-    skillIcon.classList.add("skillDark");
-  }
+function setDarkMode() {
+  mainDocument.style.backgroundColor = "black";
+  documentText.style.color = "white";
+  localStorage.setItem("darkMode", "true");
+  skillIcon.classList.add("skillDark");
+  lightModeButton.innerHTML = "LightMode";
 }
 
 function setLightMode() {
@@ -39,4 +28,12 @@ function setLightMode() {
   skillIcon.classList.remove("skillDark");
 }
 
-lightModeButton.addEventListener("click", setLightMode);
+toggleDarkMode = () => {
+  if (localStorage.darkMode === "true") {
+    setLightMode();
+  } else {
+    setDarkMode();
+  }
+};
+
+lightModeButton.addEventListener("click", toggleDarkMode);
