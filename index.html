@@ -17,7 +17,8 @@
 <body>
   <div class="main">
     <div class="navigation">
-      <h1 class="header-text" id="logo-text">Peter Franklin</h1>
+      <img class="header-text" id="logo-text" src="/media/logoPF.png">
+      <!-- TODO: make this pretty -->
       <nav class="navigation-container">
         <ul class="navlist">
           <a href="#">
@@ -30,30 +31,28 @@
             <li class="navlist-item">Contact</li>
           </a>
         </ul>
-        <button class="lightModeButton">
-          &#9790;
-        </button>
       </nav>
     </div>
     <section class="about">
-      <h2 class="about-header content-header">About</h2>
+      <!-- <h2 class="about-header content-header">About</h2> -->
       <div class="about-container">
-        <img class="about-hero"
+        <!-- <img class="about-hero"
           src="https://dsm01pap003files.storage.live.com/y4mIvChhafRy9CobA3PPAs26ye4es3Hn3DO9Qs0EQ4KojxvalCfLrVTLhOiyVGcarF8P8Kfsah98fnmAb1GY6DqXgLHP8hIGLDPMf7ZhK0eD7S5OHFJZUCJnMSQjNJ5zvsJ5ocsu5FJ-Pvqhwomb90nmFgeDkmQkenxZDDHcUHZFNBcsVGYrC7_5SZn67GZW0k6?width=800&height=800&cropmode=none"
-          alt="">
+          alt=""> -->
         <div class="about-text">
-          <h2>Hi!</h2>
-          <h3>I'm Peter</h3>
+          <h2 id="hello">Hello</h2>
           <p class="about-text">
             I'm an experienced Front End Engineer with a passion for learning, self improvement, and improving the life
             of
             those around me.
           </p>
+
+          <p class="">How can I help?</p>
         </div>
       </div>
 
     </section>
-    <section class="skills">
+    <!-- <section class="skills">
       <h2 class="skills-header content-header">Skills</h2>
       <div class="skills-container">
         <i class="skill"><img src="media/html5.svg" alt="html5"></i>
@@ -66,16 +65,19 @@
         <i class="skill"><img src="media/git-alt.svg" alt="git"></i>
         <i class="skill"><img src="media/terminal-solid.svg" alt="CLI"></i>
       </div>
-    </section>
+    </section> -->
     <div class="footer">
       <footer>
         <h3 class="footer-text">
           Made with &#x1F920; in Texas
         </h3>
+        <button class="lightModeButton">
+          &#9790;
+        </button>
       </footer>
     </div>
   </div>
 </body>
-<script src="index.js"></script>
-
+<script src="lightMode.js"></script>
+<script src="changeHello.js"></script>
 </html>

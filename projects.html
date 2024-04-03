@@ -16,22 +16,20 @@
 <body>
   <div class="main">
     <div class="navigation">
-      <h1 class="header-text" id="logo-text">Peter Franklin</h1>
+      <img class="header-text" id="logo-text" src="/media/logoPF.png">
+      <!-- TODO: make this pretty -->
       <nav class="navigation-container">
         <ul class="navlist">
-          <a href="index.html">
+          <a href="/index.html">
             <li class="navlist-item">About</li>
           </a>
-          <a href="#">
+          <a href="projects.html" onclick="pageSwitch()">
             <li class="navlist-item">Projects</li>
           </a>
           <a href="contact.html">
             <li class="navlist-item">Contact</li>
           </a>
         </ul>
-        <button class="lightModeButton">
-          &#9790;
-        </button>
       </nav>
     </div>
     <section class="projects">
@@ -42,8 +40,8 @@
           frameborder="0"></iframe>
       </div>
       <div class="project-container">
-        <h3 class="project-container-header">Technical Documentation</h3>
-        <iframe class="projects-iframe" src="https://squeakysquid97.github.io/project-techDocs/"
+        <h3 class="project-container-header">Lite Consulting</h3>
+        <iframe class="projects-iframe" src="https://liteconsulting.us/"
           style="width: 100%; height:80vh;" frameborder="0"></iframe>
       </div>
     </section>
@@ -52,6 +50,9 @@
         <h3 class="footer-text">
           Made with &#x1F920; in Texas
         </h3>
+        <button class="lightModeButton">
+          &#9790;
+        </button>
       </footer>
     </div>
     <section style="display:none;" class="skills">
@@ -59,6 +60,6 @@
     </section>
   </div>
 </body>
-<script src="index.js"></script>
+<script src="lightMode.js"></script>
 
 </html>

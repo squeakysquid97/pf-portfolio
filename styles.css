@@ -1,20 +1,39 @@
+html, body {
+  height: 100%
+}
+body {
+  background-image: url("media/abstract-background-wallpaper.jpg");
+  color: white;
+  display: flex;
+  align-items: stretch;
+}
 .main {
   /* margin: 1.6rem 5rem; */
   padding: 0.5rem 0.5rem;
   font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+#logo-text {
+  height: 5.5rem;
 }
 
 .navigation {
   display: flex;
+  justify-content: space-between;
 }
 
-.header-text {
-  font-size: 26px;
-  margin-right: 2.5rem;
+.navigation-container {
+ display: flex;
 }
+
 
 .navlist {
   display: flex;
+  flex-direction: column;
 }
 
 .navlist-item {
@@ -23,18 +42,24 @@
 }
 
 .navlist-item:hover {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem;
   padding: 3px;
-  color: rgb(85, 85, 85);
+  color: rgb(85, 85, 85); */
 }
+
+/* .header-text {
+  font-size: 26px;
+  margin-right: 2.5rem;
+} */
 
 .content-header {
   font-size: 1.3rem;
+  text-align: center;
 }
 
 section {
   margin: 3rem 0;
-  border-top: 0.5px solid black;
+  /* border-top: 0.5px solid black; */
   padding: 1rem 0;
 }
 
@@ -45,10 +70,10 @@ section {
   padding: 2.5rem 0;
 }
 
-.about-hero {
+/* .about-hero {
   border-radius: 5px;
   width: 25%;
-}
+} */
 
 .about-text {
   width: 60%;
@@ -56,13 +81,25 @@ section {
   line-height: 1.5;
 }
 
-.about-text p {
-  padding: 0.5rem 0;
+.about-subtext {
+  padding-top: 0.5rem;
+  font-style: italic;
 }
 
+.about-text p {
+  padding-left: 0.3rem;
+}
+
+#hello {
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+
+
 .about-text h2 {
-  font-size: 1.6rem;
+  font-size: 6rem;
   font-weight: 800;
+  font-style: italic;
 }
 
 .about-text h3 {
@@ -70,10 +107,22 @@ section {
   font-weight: 600;
 }
 
+.about{
+  height: 100%;
+  display: flex;
+
+}
+
+.skills {
+  height: 100%;
+  
+}
+
 .skills-container {
   display: flex;
   justify-content: space-between;
   padding: 2.5rem 0;
+  flex-direction: column;
 }
 
 .skill,
@@ -85,8 +134,8 @@ section {
   filter: invert(1);
 }
 .projects-iframe {
-  padding: 1.8rem;
-  margin: 0.5rem;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .project-container-header {
@@ -106,22 +155,20 @@ section {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-}
-
-.footer-text {
-  /* padding: 2rem 0; */
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .lightModeButton {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   background-color: transparent;
   border: none;
   cursor: pointer;
   outline: none;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,10 +180,10 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
+/* 
   .about-hero {
     width: 50%;
-  }
+  } */
 
   .about-text {
     width: 100%;
@@ -163,6 +210,14 @@ footer {
 
   .fcf-button {
     width: 1rem !important;
+  }
+
+  footer{
+    margin: 3%;
+  }
+
+  .lightModeButton{
+    margin-right: 25%;
   }
 
   .footer-text {
